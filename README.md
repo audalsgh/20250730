@@ -36,4 +36,5 @@ peoplenet 모델 파일을 직접 코랩에 업로드하는 코드를 사용했�
 
 우선순위 : PeopleNet→TrafficNet→YOLO 순. (사람이 제일 중요, 그다음이 신호 및 차량, 마지막이 일반 객체들)<br>
 -> 우선순위가 높은 모델의 예측을 먼저 통과시키고 겹치는 박스를 제거<br>
+
 세 모델(PeopleNet, TrafficNet, YOLOv11)각각의 검출 결과(박스, 클래스, confidence)를 모두 모아서, 이를 하나의 최종 결과로 합치는 단계가 필요.
