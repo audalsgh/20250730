@@ -42,6 +42,7 @@ peoplenet 모델 파일을 직접 코랩에 업로드하는 코드를 사용했�
 
 ## 코랩에서 피플넷 이후 부분을 만들고, 실행해보는 과정.
 [코드 정리](
+
 <img width="635" height="211" alt="image" src="https://github.com/user-attachments/assets/2a6f3d56-7a87-414d-b51d-89cc848a7890" />
 
 Jetson‐Inference 저장소에서 제공하는 TrafficCamNet ONNX 파일들은 CPU/GPU(Colab)에서 바로 사용 가능한 순수 ONNX 형태가 아님.<br>
