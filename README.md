@@ -8,6 +8,7 @@ runpod에서 pod를 생성한 후, 주피터 랩이 아닌 터미널 창을 열�
 <img width="2502" height="988" alt="image" src="https://github.com/user-attachments/assets/c5e0d56e-3168-401c-8cec-50802831f11b" /><br>
 코드에서 api키, json파일, 0757485240724879, no-team, no-ace 선택하도록 되있어서 입력함.<br>
 <img width="757" height="823" alt="image" src="https://github.com/user-attachments/assets/2bec9b5c-64a1-4bba-ba41-6eefe19d008a" /><br>
-!명령어는 터미널에서 했고, import부분부터 실행해본 모습.
+!명령어는 터미널에서 했고, import부분부터 실행해본 모습.<br>
+결과영상을 다운받는 코드는 gpt를 통해 셀을 하나 더 추가했다.
 <img width="1188" height="796" alt="image" src="https://github.com/user-attachments/assets/61a24f4c-fd68-4a4f-88a4-83f3b5351ad2" /><br>
 결과영상이 1초도 안되게 짧은 이유는, 100프레임씩 건너뛰는 샘플링을 했기때문.
