@@ -17,7 +17,8 @@ runpod에서 pod를 생성한 후, 주피터 랩이 아닌 터미널 창을 열�
 어제 피플넷까지만 진행해보았으니, 오늘은 트래픽넷과 YOLOv11까지 통합해보자.<br>
 peoplenet 모델 파일을 직접 코랩에 업로드하는 코드를 사용했었는데, 구글 드라이브와 현재 리포지터리에 백업해두었다.<br>
 
-**앙상블(ensemble)이란, 여러 개의 서로 다른 모델을 함께 사용해서 단일 모델보다 더 견고하고 정확한 예측을 얻는 기법. 특히 객체 검출(Object Detection)에 쓰임**<br>
+**앙상블(ensemble)이란, 여러 개의 서로 다른 모델을 함께 사용해서 단일 모델보다 더 견고하고 정확한 예측을 얻는 기법.<br>
+특히 객체 검출(Object Detection)에 쓰임**<br>
 
 장점
 - 모델 간 강·약점을 보완
@@ -38,3 +39,8 @@ peoplenet 모델 파일을 직접 코랩에 업로드하는 코드를 사용했�
 -> 우선순위가 높은 모델의 예측을 먼저 통과시키고 겹치는 박스를 제거<br>
 
 세 모델(PeopleNet, TrafficNet, YOLOv11)각각의 검출 결과(박스, 클래스, confidence)를 모두 모아서, 이를 하나의 최종 결과로 합치는 단계가 필요.
+
+<img width="635" height="211" alt="image" src="https://github.com/user-attachments/assets/2a6f3d56-7a87-414d-b51d-89cc848a7890" />
+
+Jetson‐Inference 저장소에서 제공하는 TrafficCamNet ONNX 파일들은 CPU/GPU(Colab)에서 바로 사용 가능한 순수 ONNX 형태가 아님. (실제로 내려받아보면 그래프 노드가 0이거나, TensorRT 전용 플러그인이 포함되있음.)<br>
+따라서 Colab 상에서 “TrafficNet ONNX” 를 그대로 돌리는 건 현실적으로 불가능에 가깝고, 대신 ultralytics YOLO를 이용한 “교통 객체 필터링” 방식을 권장.
