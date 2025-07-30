@@ -50,5 +50,4 @@ Jetson‐Inference 저장소에서 제공하는 TrafficCamNet ONNX 파일들은 
 따라서 Colab 상에서 “TrafficNet ONNX” 를 그대로 돌리는 건 현실적으로 불가능에 가깝고, 대신 ultralytics YOLO를 이용한 “교통 객체 필터링” 방식을 권장.
 
 <img width="1289" height="719" alt="image" src="https://github.com/user-attachments/assets/e93a4f14-4e9a-4dcc-ad06-27aa48c9961c" /><br>
-결과영상 : 코드상의 문제로 박스가 일부 프레임에서만 등장하도록 되어있어 정지 장면을 캡쳐해왔다.<br>
-**-> 피플넷 + YOLO 앙상블로 사람뿐만 아니라 일반적인 객체도 감지하는 모습!**
+**결과영상 -> 피플넷 + YOLO 앙상블로 사람뿐만 아니라 일반적인 객체도 감지하는 모습!**
