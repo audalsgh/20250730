@@ -1,7 +1,6 @@
 # 28일차
 
 ## NVIDIA api 키 발급후, 교수님의 코드를 runpod에서 돌려보기
-<img width="995" height="93" alt="image" src="https://github.com/user-attachments/assets/a468c009-8d02-4797-835f-8083ee13d223" /><br>
 api키는 한번만 보여준다. 따로 복사해둘것.<br>
 <img width="516" height="493" alt="image" src="https://github.com/user-attachments/assets/dd2bed39-66c9-4edf-b9f0-02be06d558fb" /><br>
 runpod에서 pod를 생성한 후, 주피터 랩이 아닌 터미널 창을 열어 !명령어들을 실행해야 입력가능.
