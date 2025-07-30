@@ -43,5 +43,6 @@ peoplenet 모델 파일을 직접 코랩에 업로드하는 코드를 사용했�
 ## 코랩에서 피플넷 이후 부분을 만들고, 실행해보는 과정.
 <img width="635" height="211" alt="image" src="https://github.com/user-attachments/assets/2a6f3d56-7a87-414d-b51d-89cc848a7890" />
 
-Jetson‐Inference 저장소에서 제공하는 TrafficCamNet ONNX 파일들은 CPU/GPU(Colab)에서 바로 사용 가능한 순수 ONNX 형태가 아님. (실제로 내려받아보면 그래프 노드가 0이거나, TensorRT 전용 플러그인이 포함되있음.)<br>
+Jetson‐Inference 저장소에서 제공하는 TrafficCamNet ONNX 파일들은 CPU/GPU(Colab)에서 바로 사용 가능한 순수 ONNX 형태가 아님.<br>
+(실제로 내려받아보면 그래프 노드가 0이거나, TensorRT 전용 플러그인이 포함되있음.)<br>
 따라서 Colab 상에서 “TrafficNet ONNX” 를 그대로 돌리는 건 현실적으로 불가능에 가깝고, 대신 ultralytics YOLO를 이용한 “교통 객체 필터링” 방식을 권장.
